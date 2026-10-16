@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,14 +29,12 @@
                     </div>
                 </article>
                 <script>
-                    let firstFloatNumber = parseFloat(prompt("Введіть перше дійсне число", 0))
-                    let secondFloatNumber = parseFloat(prompt("Введіть друге дійсне число", 0))
+                    const firstFloatNumber = parseFloat(prompt("Введіть перше дійсне число", 0))
+                    const secondFloatNumber = parseFloat(prompt("Введіть друге дійсне число", 0))
 
-                    let sum, product, quotient;
-
-                    sum = firstFloatNumber + secondFloatNumber;
-                    product = firstFloatNumber * secondFloatNumber;
-                    quotient = firstFloatNumber / secondFloatNumber;
+                    const sum = firstFloatNumber + secondFloatNumber;
+                    const product = firstFloatNumber * secondFloatNumber;
+                    const quotient = firstFloatNumber / secondFloatNumber;
 
                     document.write(`
                         <div class="no-hover nb-w-full task">

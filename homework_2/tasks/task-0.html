@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -97,16 +97,14 @@
                     </div>
                 </article>
                 <script>
-                    let numberA = Number(prompt("Введіть число a", 0))
-                    let numberB = Number(prompt("Введіть число b", 0))
-                    let numberC = Number(prompt("Введіть число c", 0))
+                    const numberA = Number(prompt("Введіть число a", 0))
+                    const numberB = Number(prompt("Введіть число b", 0))
+                    const numberC = Number(prompt("Введіть число c", 0))
 
-                    let s1, s2, s3, s4;
-
-                    s1 = numberA + numberB + 12;
-                    s2 = Math.sqrt((numberA + numberB) / (2 * numberA))
-                    s3 = Math.cbrt((numberA + numberB) * numberC)
-                    s4 = Math.sin(numberA / (numberB * -1))
+                    const s1 = numberA + numberB + 12;
+                    const s2 = Math.sqrt((numberA + numberB) / (2 * numberA))
+                    const s3 = Math.cbrt((numberA + numberB) * numberC)
+                    const s4 = Math.sin(numberA / (numberB * -1))
 
                     document.write(`
                         <div class="no-hover nb-w-full task">
