@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Задача 1</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div class="content__container flex-body">
+                <article class="nb-card no-hover">
+                    <div class="nb-card-content">
+                        <h4 class="nb-card-title">Задача 0</h4>
+                        <p class="nb-card-text text-card">Обчислити значення виразів</p>
+                        <div class="math-holder">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                                <msub>
+                                    <mi>S</mi>
+                                    <mn>1</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mi>a</mi>
+                                <mo>+</mo>
+                                <mn>12</mn>
+                                <mo>+</mo>
+                                <mi>b</mi>
+                            </math>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                                <msub>
+                                    <mi>S</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <msqrt>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>a</mi>
+                                            <mo>+</mo>
+                                            <mi>b</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mn>2</mn>
+                                            <mi>a</mi>
+                                        </mrow>
+                                    </mfrac>
+                                </msqrt>
+                            </math>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                                <msub>
+                                    <mi>S</mi>
+                                    <mn>3</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mroot>
+                                    <mrow>
+                                        <mo>(</mo>
+                                        <mi>a</mi>
+                                        <mo>+</mo>
+                                        <mi>b</mi>
+                                        <mo>)</mo>
+                                        <mo>·</mo>
+                                        <mi>c</mi>
+                                    </mrow>
+                                    <mn>3</mn>
+                                </mroot>
+                            </math>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                                <msub>
+                                    <mi>S</mi>
+                                    <mn>4</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mi>sin</mi>
+                                <mfenced>
+                                    <mfrac>
+                                        <mi>a</mi>
+                                        <mrow>
+                                            <mo>-</mo>
+                                            <mi>b</mi>
+                                        </mrow>
+                                    </mfrac>
+                                </mfenced>
+                            </math>
+                        </div>
+                    </div>
+                </article>
+                <script>
+                    let numberA = Number(prompt("Введіть число a", 0))
+                    let numberB = Number(prompt("Введіть число b", 0))
+                    let numberC = Number(prompt("Введіть число c", 0))
+
+                    let s1, s2, s3, s4;
+
+                    s1 = numberA + numberB + 12;
+                    s2 = Math.sqrt((numberA + numberB) / (2 * numberA))
+                    s3 = Math.cbrt((numberA + numberB) * numberC)
+                    s4 = Math.sin(numberA / (numberB * -1))
+
+                    document.write(`
+                        <div class="no-hover nb-w-full task">
+                            <p>Число А = ${numberA}</p>
+                            <p>Число B = ${numberB}</p>
+                            <p>Число C = ${numberC}</p>
+                            <p>S<sub>1</sub>: ${s1}</p>
+                            <p>S<sub>2</sub>: ${s2}</p>
+                            <p>S<sub>3</sub>: ${s3}</p>
+                            <p>S<sub>4</sub>: ${s4}</p>
+                        </div>
+                    `)
+                </script>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

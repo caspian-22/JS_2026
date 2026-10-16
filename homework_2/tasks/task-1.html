@@ -28,21 +28,20 @@
                         </p>
                     </div>
                 </article>
-                <div class="no-hover nb-w-full task">
-                    <script>
-                        let firstFloatNumber = parseFloat(prompt("Введіть перше дійсне число", 0))
-                        let secondFloatNumber = parseFloat(prompt("Введіть друге дійсне число", 0))
+                <script>
+                    let firstFloatNumber = parseFloat(prompt("Введіть перше дійсне число", 0))
+                    let secondFloatNumber = parseFloat(prompt("Введіть друге дійсне число", 0))
 
-                        document.write(`Ваше перше число: ${firstFloatNumber}<br>`)
-                        document.write(`Ваше друге число: ${secondFloatNumber}<br>`)
+                    let sum, product, quotient;
 
-                        let sum, product, quotient;
+                    sum = firstFloatNumber + secondFloatNumber;
+                    product = firstFloatNumber * secondFloatNumber;
+                    quotient = firstFloatNumber / secondFloatNumber;
 
-                        sum = firstFloatNumber + secondFloatNumber;
-                        product = firstFloatNumber * secondFloatNumber;
-                        quotient = firstFloatNumber / secondFloatNumber;
-
-                        document.write(`
+                    document.write(`
+                        <div class="no-hover nb-w-full task">
+                            <p>Ваше перше число: ${firstFloatNumber}</p>
+                            <p>Ваше друге число: ${secondFloatNumber}</p>
                             <table class="nb-table">
                                 <thead>
                                     <tr>
@@ -59,9 +58,9 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        `)
-                    </script>
-                </div>
+                        </div>
+                    `)
+                </script>
             </div>
         </main>
     </div>
