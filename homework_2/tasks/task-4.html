@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
+    <link rel="stylesheet" href="/JS_2026/css/reset.css" />
+    <link rel="stylesheet" href="/JS_2026/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Задача 4</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div class="content__container flex-body">
+                <article class="nb-card no-hover">
+                    <div class="nb-card-content">
+                        <h4 class="nb-card-title">Задача 4</h4>
+                        <p class="nb-card-text text-card">Дано довжину у сантиметрах. Визначити скільки це метрів і
+                            кілометрів.
+                        </p>
+                    </div>
+                </article>
+                <script>
+                    const sm = parseInt(prompt("Введіть довжину у сантиметрах", 0))
+
+                    const m = sm / 100
+                    const km = m / 1000
+
+                    document.write(`
+                        <div class="no-hover nb-w-full task">
+                            <p>Довжина у сантиметрах: ${sm}</p>
+                            <p>Довжина у метрах: ${m}</p>
+                            <p>Довжина у кілометрах: ${km}</p>
+                        </div>
+                    `)
+                </script>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
