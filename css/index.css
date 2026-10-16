@@ -1,0 +1,60 @@
+body {
+    font-size: 18px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    background-color: #ffd23f;
+}
+.page {
+    padding-bottom: 40px;
+}
+.nb-marquee {
+     font-family: "Space Grotesk", sans-serif;
+     font-weight: 700;
+}
+.header {
+    margin-block: 40px;
+}
+ [class*="__container"] {
+   max-inline-size: 1200px; 
+   padding-inline: 25px;
+   margin-inline: auto; }
+
+.blo {
+    background-color: #ff6b35;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+.homework__body {
+    /* display: flex;
+    gap: 20px; */
+}
+.text-card {
+    font-size: 20px !important;
+    font-family: "Space Mono", monospace !important;
+}
+.flex-body {
+    display: flex;
+    gap: 40px;
+}
+.task {
+    flex: 1 1 auto;
+    background-color: #fff;
+    color: #000;
+    border: 3.5px solid #000;
+    box-shadow: 8px 8px 0px #000;
+    width: 100%;
+    max-width: 100%;
+    transition: all .15s cubic-bezier(0.77, 0, 0.18, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    font-size: 21px;
+    /* font-family: "Space Grotesk", sans-serif; */
+    font-weight: 600;
+}
+.no-hover {
+    pointer-events: none;
+}
+.content {
+    padding: 40px 0px;
+}

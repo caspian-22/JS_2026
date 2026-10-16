@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Задача 1</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div class="content__container flex-body">
+                <article class="nb-card no-hover">
+                    <div class="nb-card-content">
+                        <h4 class="nb-card-title">Задача 1</h4>
+                        <p class="nb-card-text text-card">Знайти суму, добуток та частку двох дійсних чисел. Результат
+                            вивести у формі таблиці
+                        </p>
+                    </div>
+                </article>
+                <div class="no-hover nb-w-full task">
+                    <script>
+                        let firstFloatNumber = parseFloat(prompt("Введіть перше дійсне число", 0))
+                        let secondFloatNumber = parseFloat(prompt("Введіть друге дійсне число", 0))
+
+                        document.write(`Ваше перше число: ${firstFloatNumber}<br>`)
+                        document.write(`Ваше друге число: ${secondFloatNumber}<br>`)
+
+                        let sum, product, quotient;
+
+                        sum = firstFloatNumber + secondFloatNumber;
+                        product = firstFloatNumber * secondFloatNumber;
+                        quotient = firstFloatNumber / secondFloatNumber;
+
+                        document.write(`
+                            <table class="nb-table">
+                                <thead>
+                                    <tr>
+                                        <th>Сума</th>
+                                        <th>Добуток</th>
+                                        <th>Частка</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>${sum}</td>
+                                        <td>${product}</td>
+                                        <td>${quotient}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        `)
+                    </script>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
