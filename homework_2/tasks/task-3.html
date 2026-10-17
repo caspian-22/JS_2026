@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
+    <link rel="stylesheet" href="/JS_2026/css/reset.css" />
+    <link rel="stylesheet" href="/JS_2026/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Задача 3</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div class="content__container flex-body">
+                <article class="nb-card no-hover">
+                    <div class="nb-card-content">
+                        <h4 class="nb-card-title">Задача 3</h4>
+                        <p class="nb-card-text text-card">Дано вартість одиниці товару і кількість. Знайти загальну
+                            вартість та ПДВ (5% від загальної вартості).
+                        </p>
+                    </div>
+                </article>
+                <script>
+                    const productPrice = Number(prompt("Введіть вартість одиниці товару", 0))
+                    const productAmount = Number(prompt("Введіть кількість товару", 0))
+
+                    const totalPrice = productPrice * productAmount
+                    const PDV = (totalPrice * 5) / 100
+                    const priceWithoutPDV = totalPrice - PDV
+
+                    document.write(`
+                        <div class="no-hover nb-w-full task">
+                            <p>Всього одиниць товару: ${productAmount}</p>
+                            <p>Ціна за одиницю: ${productPrice}</p>
+                            <p>Загальна вартість (з ПДВ): ${totalPrice}</p>
+                            <p>Вартість без ПДВ: ${priceWithoutPDV}</p>
+                            <p>ПДВ: ${PDV}</p>
+                        </div>
+                    `)
+                </script>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

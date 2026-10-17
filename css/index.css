@@ -64,6 +64,15 @@ body {
     align-items: start;
     gap: 15px;
 }
+.receipt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.price-holder {
+    display: flex;
+    justify-content: space-between;
+}
 /* math {
     display: flex;
     flex-direction: row;

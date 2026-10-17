@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
+    <link rel="stylesheet" href="/JS_2026/css/reset.css" />
+    <link rel="stylesheet" href="/JS_2026/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Задача 6</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div class="content__container flex-body">
+                <article class="nb-card no-hover">
+                    <div class="nb-card-content">
+                        <h4 class="nb-card-title">Задача 6</h4>
+                        <p class="nb-card-text text-card">З клавіатури вводяться вартість товару та кількість одиниць 3
+                            товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у
+                            супермаркеті) використовуючи елементи розмітки.
+                        </p>
+                    </div>
+                </article>
+                <script>
+                    const coffee = Number(prompt("Введіть ціну кави", 50))
+                    const amountCoffee = Number(prompt("Введіть кількість кави", 1))
+                    const tea = Number(prompt("Введіть ціну чаю", 50))
+                    const amountTea = Number(prompt("Введіть кількість чаю", 1))
+                    const cookies = Number(prompt("Введіть ціну печива", 50))
+                    const amountCookies = Number(prompt("Введіть кількість печива", 1))
+
+                    const coffePrice = coffee * amountCoffee
+                    const teaPrice = tea * amountTea
+                    const cookiesPrice = cookies * amountCookies
+                    const totalPrice = coffePrice + teaPrice + cookiesPrice
+
+                    document.write(`
+                        <div class="no-hover nb-w-full task">
+                            <div class="receipt">
+                                <h4>Продукти БЛИЗЕНЬКО</h4>
+                                <div class="price-holder">
+                                    <span>Кава Nescaffe x ${amountCoffee}</span>
+                                    <span>${coffePrice} грн</span>
+                                </div>
+                                <div class="price-holder">
+                                    <span>Чай Lipton x ${amountTea}</span>
+                                    <span>${teaPrice} грн</span>
+                                </div>
+                                <div class="price-holder">
+                                    <span>Печиво ROSHEN до кави x ${amountCookies}</span>
+                                    <span>${cookiesPrice} грн</span>
+                                </div>
+                                <div class="price-holder">
+                                    <span>ВСЬОГО:</span>
+                                    <span>${totalPrice} грн</span>
+                                </div>
+                            </div>
+                        </div>
+                    `)
+                </script>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

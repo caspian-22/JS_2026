@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
+    <link rel="stylesheet" href="/JS_2026/css/reset.css" />
+    <link rel="stylesheet" href="/JS_2026/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Задача 5</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div class="content__container flex-body">
+                <article class="nb-card no-hover">
+                    <div class="nb-card-content">
+                        <h4 class="nb-card-title">Задача 5</h4>
+                        <p class="nb-card-text text-card">Дано кількість секунд, що пройшла від початку доби. Визначити
+                            скільки це годин і хвилин.
+                        </p>
+                    </div>
+                </article>
+                <script>
+                    const seconds = parseInt(prompt("Введіть кількість секунд з початку доби", 60))
+
+                    const minutes = seconds / 60
+                    const hours = minutes / 60
+
+                    document.write(`
+                        <div class="no-hover nb-w-full task">
+                            <p>З початку доби пройшло: ${seconds} секунд, <br> або ж  ${minutes.toFixed(2)} хвилин, <br> або ${hours.toFixed(2)} годин</p>
+                        </div>
+                    `)
+                </script>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
