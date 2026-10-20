@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
+    <link rel="stylesheet" href="/JS_2026/css/reset.css" />
+    <link rel="stylesheet" href="/JS_2026/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Задача 4</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div class="content__container flex-body">
+                <article class="nb-card no-hover">
+                    <div class="nb-card-content">
+                        <h4 class="nb-card-title">Задача 4</h4>
+                        <p class="nb-card-text text-card">З клавіатури вводиться вік людини. Вивести на екран ким він є
+                            (дитиною у садочку, школярем, студентом, працівником, пенсіонером).</p>
+
+                    </div>
+                </article>
+                <script>
+                    const age = parseInt(prompt("Будь ласка, введіть вік:", 3))
+                    let person;
+
+                    if (age >= 3 && age < 6) person = "дитиною у садочку"
+                    else if (age >= 6 && age <= 17) person = "учнем у школі"
+                    else if (age >= 17 && age <= 21) person = "студентом в університеті"
+                    else if (age >= 21 && age < 60) person = "працівником"
+                    else person = "пенсіонером"
+
+                    document.write(`
+                        <div class="no-hover nb-w-full task">
+                            <p>Введений вік: ${age}</p>
+                            <p>Людина є ${person}</p>
+                        </div>
+                    `)
+                </script>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

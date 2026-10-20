@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css" />
+    <link rel="stylesheet" href="JS_2026/css/reset.css" />
+    <link rel="stylesheet" href="JS_2026/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Задача 7</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div class="content__container flex-body">
+                <article class="nb-card no-hover">
+                    <div class="nb-card-content">
+                        <h4 class="nb-card-title">Задача 7</h4>
+                        <p class="nb-card-text text-card">З клавіатури вводиться номер місяця. Вивести до якої пори він
+                            відноситься</p>
+                    </div>
+                </article>
+                <script>
+                    const monthNumber = parseInt(prompt("Введіть номер місяця", 1))
+                    let season
+
+                    if (monthNumber >= 3 && monthNumber < 6) season = "весна"
+                    else if (monthNumber >= 6 && monthNumber < 9) season = "літо"
+                    else if (monthNumber >= 9 && monthNumber <= 12) season = "осінь"
+                    else if (monthNumber === 1 || monthNumber === 2 || monthNumber === 12) season = "зима"
+                    else alert("Можна вваодити лише від 1 до 12 !!!")
+                    document.write(`
+                        <div class="no-hover nb-w-full task">
+                            <p>Введено номер: ${monthNumber}</p>
+                            <p>Пора року: ${season}</p>
+                        </div>
+                    `)
+                </script>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
